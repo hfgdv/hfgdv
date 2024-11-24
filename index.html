@@ -217,62 +217,7 @@
             </div>
         </div>
 
-<style type="text/css">
-    input.bdbtn {
-        width: 65px;
-        height: 50px;
-        line-height: 28px;
-        font: 12px \5b8b\4f53;
-        cursor: pointer;
-        outline: none;
-        display: inline-block;
-        text-align: center;
-        color: #fff;
-        border: none;
-        background-color: #1a89ed;
-    }
-    input.bdtext {
-        width: 540px;
-        padding-left: 5px;
-        margin-left: 10px;
-        margin-right: 10px;
-        height: 50px;
-        line-height: 30px;
-    }
-</style>
-<div style='overflow:hidden'>
-    <form οnsubmit="return baiduWithHttps(this)" action="http://www.baidu.com/baidu" target="_blank">
-        <input name="tn" type="hidden" value="SE_zzsearchcode_shhzc78w">
-        <input class='bdtext' type="text" οnfοcus="checkHttps" name="word" size="30">
-        <input class='bdbtn' type="submit" value="百度搜索">
-    </form>
-    <script src="http://s1.bdstatic.com/r/www/cache/global/js/BaiduHttps_20150714_zhanzhang.js"></script>
-    <script>
-        function checkHttps() {
- 
-            BaiduHttps.useHttps();
- 
-        };
- 
-        function baiduWithHttps(formname) {
- 
-            var data = BaiduHttps.useHttps();
- 
-            if (data.s === 0) {
- 
-                return true;
- 
-            } else {
- 
-                formname.action = 'https://www.baidu.com/baidu' + '?ssl_s=1&ssl_c' + data.ssl_code;
- 
-                return true;
- 
-            }
- 
-        };
-    </script>
-</div>
+
 
         <div id="mh-rtop" style="display: block;"><a href="/#" class="gotop" target="_self">
     回到顶部</a>
